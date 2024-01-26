@@ -26,7 +26,7 @@ docker build -t pgd-planillas .
 ```
 3. Ejecuta el contenedor (Asegurate de tener el puerto 8081 libre).
 ```bash
-docker run -p 8081:8080 gpd-planillas:latest
+docker run -p 8081:8080 pgd-planillas:latest
 ```
 
 4. La aplicación estará disponible en http://localhost:8081/v1/planilla/{id}
