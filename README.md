@@ -20,11 +20,15 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
 ```bash
 git clone https://github.com/CristhianArce/planillas.git
 ```
-2. Construye la imagen Docker.
+2. Corre el siguiente comando desde la raíz del proyecto.
+```bash
+./gradlew build
+```
+3. Construye la imagen Docker.
 ```bash
 docker build -t pgd-planillas .
 ```
-3. Ejecuta el contenedor (Asegurate de tener el puerto 8081 libre).
+4. Ejecuta el contenedor (Asegurate de tener el puerto 8081 libre).
 ```bash
 docker run -p 8081:8080 pgd-planillas:latest
 ```
